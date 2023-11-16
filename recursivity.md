@@ -149,19 +149,7 @@ fibonacci(9);
 Pour implémenter la fonction en récursif, réfléchissez comme pour l'exemple et l'exercice précédent. \
 "Comment pourrais-je remplacer une boucle par un appel de fonction"
 
-### 4. Somme d'un tableau
-
-Réalisez une fonction calculant la somme des élements d'un tableau d'int passé en paramètre et la retournant.
-
-```
-[1, 0, 35, 26, 4]
-
-> 66
-```
-
-Le prototype de la fonction n'est volontairement pas précisé, à vous de réfléchir à comment faire votre fonction en choisissant votre stratégie et en expérimentant.
-
-### 5. my_putnbr
+### 4. my_putnbr
 
 Votre objectif est maintenant de réaliser une fonction affichant un nombre passé en paramètre.
 
@@ -175,5 +163,14 @@ my_putnbr(10)
 > 10
 ```
 
+### 5. Somme d'un tableau
 
-### Aide
+Réalisez une fonction calculant la somme des élements d'un tableau d'int passé en paramètre et la retournant.
+
+```
+[1, 0, 35, 26, 4]
+
+> 66
+```
+
+Le prototype de la fonction n'est volontairement pas précisé, à vous de réfléchir à comment faire votre fonction en choisissant votre stratégie et en expérimentant.
