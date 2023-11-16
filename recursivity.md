@@ -7,15 +7,14 @@ Dans ce cours, nous introduisons un nouveau concept : **la récursivité**.
 
 ### La récursivité c'est quoi ?
 
-La récursivité, c'est **appeler une fonction à l'intérieur d'elle-même**.
-
-Jusqu'à présent, la plupart des fonctions que vous créiez étaient des fonctions **itératives**, c'est à dire que chaque instruction était à la suite de la précédente. Lorsque vous vouliez répéter une action, vous utilisiez une boucle *for* ou *while*.
+On dit d'une fonction qu'elle est récursive lorsqu'elle se rappelle elle-même, généralement jusqu'à une condition d'arrêt.
 
 ### Ça sert à quoi ?
 
-La récursivité permet de **simplifier le code** et de **résoudre des problèmes plus facilement** qu'en itératif dans certaines situations. \
-Vous trouverez dans ce sujet des exercices graduellement plus difficiles.
+On résout généralement les problèmes avec une logique itérative (avec des boucles telles que *for* et *while*). La récursivité apporte une nouvelle approche permettant d'aborder de manière plus simple certaines situations
 
+
+Vous trouverez dans ce sujet des exercices graduellement plus difficiles. \
 Une correction des execices aura lieu au fur et à mesure du cours.
 
 ## Exemple
