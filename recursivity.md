@@ -17,6 +17,44 @@ On résout généralement les problèmes avec une logique itérative (avec des b
 Vous trouverez dans ce sujet des exercices graduellement plus difficiles. \
 Une correction des execices aura lieu au fur et à mesure du cours.
 
+### Quels cas d'utilisation ?
+
+La récursivité est particulièrement utile dans ces certains cas, par exemple lorsqu'il faut inverser l'ordre d'exécution.
+
+Imaginons qu'on veuille afficher une chaîne de caractère en partant de la fin.
+
+En itératif :
+```c
+void reverse(char *str)
+{
+    int len = 0;
+
+    // Calculer la taille de la chaîne
+    for (int i = 0; str[i]; i++)
+        len++;
+
+    // L'afficher en partant de la fin
+    for (int i = len - 1; i >= 0; i--)
+        printf("%c", str[i]);
+}
+```
+
+En récursif :
+```c
+void reverse(char *str)
+{
+    // S'arrêter si la chaîne est terminée
+    if (!str[0])
+        return;
+
+    // Appeler reverse avec la chaîne commençant au 2ème élément
+    reverse(&str[1]);
+
+    // Puis afficher le premier élement
+    printf("%c", str[0]);
+}
+```
+
 ## Exemple
 
 Voici un premier exemple pour illustrer ce concept avec la même fonction faite en itératif et en récursif.
@@ -79,7 +117,6 @@ void compte_a_rebours(int nb)
     printf("%d\n", nb);
 
     compte_a_rebours(nb - 1);
-    return;
 }
 ```
 
@@ -174,3 +211,11 @@ Réalisez une fonction calculant la somme des élements d'un tableau d'int pass�
 ```
 
 Le prototype de la fonction n'est volontairement pas précisé, à vous de réfléchir à comment faire votre fonction en choisissant votre stratégie et en expérimentant.
+
+## Aller plus loin
+
+Si vous avez fini tous les exercices jusque là, voici quelques idées d'exercices à réaliser en récursif
+
+- Programme de résolution de Sudoku
+- Un programme trouvant la solution à un jeu du pendu
+- Un explorateur de labyrinthe, trouvant une sortie
